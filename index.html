@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./css/style.min.css" />
+
+        <title>Cars Registration</title>
+    </head>
+
+    <body>
+        <section id="cars">
+            <form class="car-form">
+                <h1 class="car-form__title">Cars</h1>
+                <div class="car__info">
+                    <div class="car__info__input">
+                        <label for="title">Title</label>
+                        <input
+                            required
+                            id="title"
+                            class="car__title"
+                            type="text"
+                            placeholder="Enter car title"
+                        />
+                    </div>
+
+                    <div class="car__info__input">
+                        <label for="brand">Brand</label>
+                        <input
+                            required
+                            id="brand"
+                            class="car__brand"
+                            type="text"
+                            placeholder="Enter car brand"
+                        />
+                    </div>
+
+                    <div class="car__info__input">
+                        <label for="price">Price</label>
+                        <input
+                            required
+                            id="price"
+                            class="car__price"
+                            type="number"
+                            placeholder="Enter car price"
+                        />
+                    </div>
+
+                    <div class="car__info__input">
+                        <label for="power">Horse power</label>
+                        <input
+                            required
+                            id="power"
+                            class="car__power"
+                            type="number"
+                            placeholder="Enter car hp"
+                        />
+                    </div>
+                    <div class="car__info__input">
+                        <label for="color">Color</label>
+                        <select name="" id="color">
+                            <option value="">Rangni tanlang</option>
+                            <option value="qora">qora</option>
+                            <option value="oq">oq</option>
+                            <option value="qizil">qizil</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="car__btn">Submit</button>
+            </form>
+        </section>
+        <section class="table__wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>N</th>
+                        <th>
+                            <select name="" id="sorting__title">
+                                <option value="">Title</option>
+                                <option value="ascending">A-Z</option>
+                                <option value="descending">Z-A</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select name="" id="sorting__brand">
+                                <option value="">Brand</option>
+                                <option value="ascending">A-Z</option>
+                                <option value="descending">Z-A</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select name="" id="sorting__price">
+                                <option value="">Price</option>
+                                <option value="descending">qimmat</option>
+                                <option value="ascending">arzon</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select name="" id="sorting__hp">
+                                <option value="">Horse power</option>
+                                <option value="descending">Ko'proq</option>
+                                <option value="ascending">Ozroq</option>
+                            </select>
+                        </th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </section>
+        <script src="./js/car-register.js"></script>
+    </body>
+</html>
